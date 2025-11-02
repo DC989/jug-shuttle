@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shuttle Service - Landing Page</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%; /* Ensure html and body take full viewport height */
+        overflow: hidden; /* Prevent scrolling if content overflows slightly */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        color: #333; /* Dark grey for text */
+        display: flex; /* Use flexbox to center the hero section */
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box; /* Include padding in height/width */
+      }
+      .hero-content {
+        max-width: 1100px; /* Slightly wider max-width for content */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px; /* Add padding to content itself for smaller screens */
+      }
+      .hero-image-container {
+        width: 90%; /* Adjust image width for better responsiveness */
+        max-width: 500px; /* Max-width for the image */
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover; /* Ensure image covers space without distortion */
+      }
+      .hero-text h1 {
+        font-size: 2.5em; /* Slightly adjusted font size for responsiveness */
+        margin-bottom: 15px;
+        color: #4caf50; /* A nice green for the heading */
+      }
+      .hero-text p {
+        font-size: 1.1em; /* Slightly adjusted font size */
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #555; /* Slightly lighter grey for body text */
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #8bc34a; /* Earthy green for the button */
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 1.2em; /* Slightly adjusted font size */
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .cta-button:hover {
+        background-color: #689f38; /* Darker green on hover */
+      }
+
+      /* Responsive adjustments */
+      @media (min-width: 768px) {
+        .hero-content {
+          flex-direction: row; /* Side-by-side on larger screens */
+          text-align: left;
+          gap: 50px; /* Increase gap for larger screens */
+        }
+        .hero-text {
+          flex: 1;
+          padding-right: 30px;
+        }
+        .hero-image-container {
+          flex: 1;
+          max-width: 50%; /* Image takes half width */
+        }
+        .hero-text h1 {
+          font-size: 3.2em; /* Larger heading on big screens */
+        }
+        .hero-text p {
+          font-size: 1.3em; /* Larger paragraph on big screens */
+        }
+        .cta-button {
+          font-size: 1.4em; /* Larger button on big screens */
+        }
+      }
+
+      @media (max-width: 767px) {
+        .hero-text h1 {
+          font-size: 2em; /* Smaller heading on small screens */
+        }
+        .hero-text p {
+          font-size: 1em; /* Smaller paragraph on small screens */
+        }
+        .cta-button {
+          font-size: 1.1em; /* Smaller button on small screens */
+          padding: 12px 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Pouzdan Kombi Prevoz: Jug Srbije - Slovenija</h1>
+          <p>
+            Vaše putovanje počinje sa nama. Nudimo direktan prevoz do Ljubljane,
+            Maribora i Celja, sa polascima iz Vranja, Niša, Leskovca i svih
+            gradova u blizini autoputa A1. Bez presedanja, od mesta dogovora do
+            Vaše krajnje destinacije.
+          </p>
+          <a href="tel:+1-800-123-4567" class="cta-button"
+            >Call Us Now: 1-800-123-4567</a
+          >
+        </div>
+        <div class="hero-image-container">
+          <img src="./vw.png" alt="Image by pngtree.com" class="hero-image" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
