@@ -303,9 +303,22 @@
         align-items: center;
       }
       body::before {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background: url("./golden-line-travel-png.png") no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        opacity: 0.4;
+        z-index: -1; /* Place behind content */
+      }
+      body::after {
         content: "SAJT JE U IZGRADNJI";
         position: fixed;
-        top: 20px;
+        bottom: 20px;
         left: 0;
         width: 100%;
         font-family: "Summer Of 76-New";
@@ -320,7 +333,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 70px 20px 20px;
+        padding: 200px 20px 80px;
         text-align: center;
         box-sizing: border-box; /* Include padding in height/width */
       }
@@ -422,20 +435,23 @@
     <section class="hero-section">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Pouzdan Kombi Prevoz: Jug Srbije - Slovenija</h1>
+          <h1>
+            Direktan Prevoz Krajova, Rumunija - Najveći novogodišnji sajam u
+            Evropi
+          </h1>
           <p>
-            Vaše putovanje počinje sa nama. Nudimo direktan prevoz do Ljubljane,
-            Maribora i Celja, sa polascima iz Vranja, Niša, Leskovca i svih
-            gradova u blizini autoputa A1. Bez presedanja, od mesta dogovora do
-            Vaše krajnje destinacije.
+            Iskusite udoban i pouzdan prevoz do najvećeg novogodišnjeg sajma u
+            Evropi u Rumuniji. Naša usluga nudi direktne vožnje sa fleksibilnim
+            rasporedom, osiguravajući da stignete na vreme i bez stresa.
+            Rezervišite svoje mesto danas i uživajte u bezbrižnom putovanju!
           </p>
-          <a href="tel:+381611590166" class="cta-button"
-            >Pozovite Nas: +381611590166</a
+          <a href="tel:+381665040583" class="cta-button"
+            >Pozovite Nas: +381665040583</a
           >
           <a
-            href="viber://contact?number=%2B+381611590166"
+            href="viber://contact?number=%2B+381665040583"
             class="cta-button cta-viber"
-            >Viber: +381611590166</a
+            >Viber: +381665040583</a
           >
         </div>
         <div class="hero-image-container">
